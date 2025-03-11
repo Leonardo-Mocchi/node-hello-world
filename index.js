@@ -14,8 +14,7 @@
 // per il bonus nella cartella drive vi ho messo delle slide extra da leggere in autonomia.
 
 // PARTE 1
-let message = "Hello World";
-console.log(message);
+console.log("Hello World");
 
 // node index.js
 
@@ -31,3 +30,12 @@ console.log(message);
 
 
 // BONUS
+/* this code logs "Hello Boolean" if no other parameter was given besides "node index.js", otherwise logs whatever you write after "index.js" if given an empty space, as "process.argv[2]" only edits the third arguement of the console command */
+
+const myText = process.argv[2];
+
+if (myText) {
+    console.log(myText);
+} else {
+    console.log("Hello Boolean");
+}
